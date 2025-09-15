@@ -1,7 +1,7 @@
 package hacker_rank_challenge;
 
 import java.util.List;
-
+// ...
 public class Candies{
     public static long candies(int n, List<Integer> arr){
         // children with the same rating can have different candies
