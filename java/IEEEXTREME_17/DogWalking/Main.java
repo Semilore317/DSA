@@ -12,7 +12,7 @@ public class Main {
         Arrays.sort(arr);
 
         // compute adjacent gaps: gaps[i] = arr[i+1] - arr[i]
-        // there are (n-1) such gaps.
+        // there are (n-1)  gaps.
         int[] gaps = new int[Math.max(0, n - 1)];
         for (int i = 0; i < n - 1; i++) gaps[i] = arr[i + 1] - arr[i];
 
