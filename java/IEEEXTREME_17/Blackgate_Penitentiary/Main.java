@@ -3,54 +3,46 @@ package IEEEXTREME_17.Blackgate_Penitentiary;
 import java.util.*;
 
 class Main {
-
-    public static LinkedHashMap<String, Integer> sortByValue(HashMap<String, Integer> hm) {
-        return hm.entrySet()
-                .stream()
-                .sorted(Map.Entry.comparingByValue())
-                .collect(
-                    LinkedHashMap::new,
-                    (m, e) -> m.put(e.getKey(), e.getValue()),
-                    LinkedHashMap::putAll
-                );
-    }
-
-    public static <K, V> List<K> getKeysByValue(Map<K, V> map, V value) {
-        List<K> keys = new ArrayList<>();
-        for (Map.Entry<K, V> entry : map.entrySet()) {
-            if (entry.getValue().equals(value)) {
-                keys.add(entry.getKey());
-            }
-        }
-        return keys;
-    }
-
-    public static void blackGate(HashMap<String, Integer> roster) {
-        HashMap<String, Integer> sortedRoster = sortByValue(roster);
-
-        List<Integer> heights = new ArrayList<>(sortedRoster.values());
-        HashSet<Integer> uniqueHeights = new HashSet<>(heights);
-
-        for (Integer height : uniqueHeights) {
-            List<String> sameHeight = getKeysByValue(sortedRoster, height);
-            System.out.println("Height " + height + ": " + sameHeight);
-        }
-
-        System.out.println("Number of unique height groups: " + uniqueHeights.size());
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        HashMap<String, Integer> heightRoster = new HashMap<>();
 
+        Map<String, Integer> heightRoster = new HashMap<>();
         for (int i = 0; i < n; i++) {
             String name = sc.next();
             int height = sc.nextInt();
             heightRoster.put(name, height);
         }
-
-        blackGate(heightRoster);
         sc.close();
+
+        // treeMap -> auto-sorts heights in ASCENDING order
+        Map<Integer, List<String>> groups = new TreeMap<>();
+
+        // group by height
+        for (Map.Entry<String, Integer> entry : heightRoster.entrySet()) {
+            int height = entry.getValue();
+            groups.putIfAbsent(height, new ArrayList<>());
+            groups.get(height).add(entry.getKey());
+        }
+
+        // sort names alphabetically within each height
+        for (List<String> names : groups.values()) {
+            Collections.sort(names);
+        }
+
+        // compute position ranges
+        int currentPos = 1;
+        for (Map.Entry<Integer, List<String>> entry : groups.entrySet()) {
+            List<String> names = entry.getValue();
+            int count = names.size();
+
+            int minPos = currentPos;
+            int maxPos = currentPos + count - 1;
+            currentPos += count;
+
+            // output
+            System.out.print(String.join(" ", names));
+            System.out.println(" " + minPos + " " + maxPos);
+        }
     }
 }
