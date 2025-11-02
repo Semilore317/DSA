@@ -1,3 +1,5 @@
+package GraphTraversal;
+
 import java.util.LinkedList;
 // Assuming 'Vertex' is another class you have defined
 

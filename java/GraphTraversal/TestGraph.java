@@ -1,3 +1,5 @@
+package GraphTraversal;
+
 class TestGraph {
     private Graph testGraph;
 

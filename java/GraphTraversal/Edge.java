@@ -1,3 +1,5 @@
+package GraphTraversal;
+
 public class Edge {
     private Vertex start;
     private Vertex end;
