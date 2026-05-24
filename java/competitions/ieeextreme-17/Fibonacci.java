@@ -1,8 +1,8 @@
-package IEEEXTREME_17.Fibonacci;
+// IEEExtreme 17 - Fibonacci
 
 import java.util.Scanner;
 
-class Main {
+class Fibonacci {
     public static int fibonacci(int n) {
         // Pisano period optimization — last digit repeats every 60 terms
         n = ((n - 1) % 60) + 1;

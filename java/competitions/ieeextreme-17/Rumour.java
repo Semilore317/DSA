@@ -1,8 +1,8 @@
-package IEEEXTREME_17.Rumour;
+// IEEExtreme 17 - Rumour
 
 import java.util.*;
 
-public class Main {
+public class Rumour {
     public static int bfs(int start, Map<Integer, List<Integer>> map, Set<Integer> visited) {
         Queue<Integer> queue = new LinkedList<>();
         queue.add(start);

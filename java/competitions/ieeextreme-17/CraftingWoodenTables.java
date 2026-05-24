@@ -1,10 +1,10 @@
-package IEEEXTREME_17.Crafting_Wooden_Tables;
+// IEEExtreme 17 - CraftingWoodenTables
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class CraftingWoodenTables {
     public static void main(String[] args) {
         // I/O
         Scanner scanner = new Scanner(System.in);

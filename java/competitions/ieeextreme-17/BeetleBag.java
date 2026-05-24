@@ -1,10 +1,10 @@
-package IEEEXTREME_17.BeetleBag;// Don't place your source in a package
+// IEEExtreme 17 - BeetleBag
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
 
-class Main {
+class BeetleBag {
     private static int getMaxFightingPower(int capacity, int[] weights, int[] powers, int n) {
         // TODO: Implement the logic (likely dynamic programming - knapsack problem)
         int[] dp = new int[capacity + 1];

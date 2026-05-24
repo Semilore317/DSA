@@ -1,4 +1,4 @@
-package pre_extreme_problems;
+// Pre-Extreme - MysteriousArchipelago
 
 import java.util.*;
 

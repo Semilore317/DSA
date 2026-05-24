@@ -1,9 +1,9 @@
-package IEEEXTREME_17.DogWalking;
+// IEEExtreme 17 - DogWalking
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class DogWalking {
     public static long dogWalkingMinSum(int[] arr, int k) {
         int n = arr.length;
         if (n == 0) return 0L;

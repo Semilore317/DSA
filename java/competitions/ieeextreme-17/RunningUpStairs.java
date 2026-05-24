@@ -1,9 +1,9 @@
-package IEEEXTREME_17.Running_Up_Stairs;
+// IEEExtreme 17 - RunningUpStairs
 
 import java.math.BigInteger;
 import java.util.Scanner;
 
-class Main {
+class RunningUpStairs {
     public static BigInteger fibonacci(int n){
         if (n == 0 || n == 1){
             return BigInteger.ONE;

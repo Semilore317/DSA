@@ -1,8 +1,8 @@
-package IEEEXTREME_17.Blackgate_Penitentiary;
+// IEEExtreme 17 - BlackgatePenitentiary
 
 import java.util.*;
 
-class Main {
+class BlackgatePenitentiary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
