@@ -1,4 +1,4 @@
-package hacker_rank_challenge;
+// HackerRank - Abbreviation
 //
 public class Abbreviation {
 //    public static String abbreviation(String a, String b){

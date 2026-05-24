@@ -1,4 +1,4 @@
-package week_1_challenge;
+// HackerRank - ArrayManipulation
 
 import java.util.ArrayList;
 import java.util.Collections;

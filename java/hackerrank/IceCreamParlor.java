@@ -1,4 +1,4 @@
-package hacker_rank_challenge;
+// HackerRank - IceCreamParlor
 
 import java.io.*;
 import java.text.spi.BreakIteratorProvider;

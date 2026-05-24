@@ -1,4 +1,4 @@
-package hacker_rank_challenge;
+// HackerRank - Candies
 
 import java.util.List;
 // ...

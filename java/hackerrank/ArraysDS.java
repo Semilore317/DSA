@@ -1,9 +1,9 @@
-//package hacker_rank_challenge;
+// HackerRank - ArraysDS
 //
 //import java.util.ArrayList;
 //import java.util.List;
 //
-//public class Arrays_DS {
+//public class ArraysDS {
 //    public static List<Integer> reverseArray(List<Integer> a) {
 //        // Write your code here
 //        List<Integer> res = new ArrayList<>();

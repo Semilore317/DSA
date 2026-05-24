@@ -1,4 +1,4 @@
-package week_1_challenge;
+// HackerRank - CoinChangeProblem
 
 import java.io.*;
 import java.util.*;

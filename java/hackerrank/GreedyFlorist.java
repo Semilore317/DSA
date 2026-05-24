@@ -1,4 +1,4 @@
-package hacker_rank_challenge;
+// HackerRank - GreedyFlorist
 
 import java.util.Arrays;
 import java.util.Collections;

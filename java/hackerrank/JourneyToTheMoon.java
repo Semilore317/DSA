@@ -1,4 +1,4 @@
-package hacker_rank_challenge;
+// HackerRank - JourneyToTheMoon
 
 import java.util.ArrayList;
 import java.util.Arrays;

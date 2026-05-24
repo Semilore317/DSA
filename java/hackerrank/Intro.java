@@ -1,8 +1,8 @@
-package hacker_rank_challenge;
+// HackerRank - Intro
 
 import java.util.List;
 
-public class intro {
+public class Intro {
     public static int introTutorial(int V, List<Integer> arr) {
         return arr.indexOf(V);
     }

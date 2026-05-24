@@ -1,10 +1,10 @@
-package hacker_rank_challenge;
+// HackerRank - CountingSort
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class CountingSort_2 {
+public class CountingSort {
     public static List<Integer> countingSort(List<Integer> arr) {
         List<Integer> result = new ArrayList<Integer>();
         int[] counting_array = new int[Collections.max(arr) + 1];

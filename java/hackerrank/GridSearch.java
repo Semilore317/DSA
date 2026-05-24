@@ -1,4 +1,4 @@
-package hacker_rank_challenge;
+// HackerRank - GridSearch
 
 import java.util.List;
 

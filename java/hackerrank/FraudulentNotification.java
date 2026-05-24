@@ -1,4 +1,4 @@
-package week_1_challenge;
+// HackerRank - FraudulentNotification
 
 import java.util.ArrayList;
 import java.util.Collections;

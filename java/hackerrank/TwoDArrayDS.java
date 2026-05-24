@@ -1,10 +1,10 @@
-package hacker_rank_challenge;
+// HackerRank - TwoDArrayDS
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TwoD_Array_DS {
+public class TwoDArrayDS {
     public static int hourglassSum(List<List<Integer>> arr) {
         // initialize maxSum to the smallest possible value
         int maxSum = Integer.MIN_VALUE;

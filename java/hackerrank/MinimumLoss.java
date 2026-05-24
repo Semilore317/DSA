@@ -1,4 +1,4 @@
-package week_1_challenge;
+// HackerRank - MinimumLoss
 
 import java.util.*;
 
