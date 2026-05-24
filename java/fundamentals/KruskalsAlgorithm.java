@@ -1,4 +1,3 @@
-package fundamentals;
 // Java Program to Implement The GOATed
 // Krushkal's Algorithm-
 import java.util.*;

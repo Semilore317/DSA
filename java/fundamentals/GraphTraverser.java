@@ -1,4 +1,4 @@
-package GraphTraversal;
+// Fundamentals - GraphTraverser
 
 import java.util.ArrayList;
 

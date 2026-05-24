@@ -1,9 +1,9 @@
-package fundamentals.linked_lists;
+// Fundamentals - LinkedList
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class linkedLists {
+public class LinkedList {
 //    public static <T> List<Integer> findAllIndexes(LinkedList<T> list, T item){
 //        List<Integer> indexes = new LinkedList<>();
 //        for (int i = 0; i < list.size(); i++) {

@@ -1,4 +1,4 @@
-package GraphTraversal;
+// Fundamentals - Edge
 
 public class Edge {
     private Vertex start;

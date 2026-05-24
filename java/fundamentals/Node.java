@@ -1,4 +1,4 @@
-package fundamentals.linked_lists;
+// Fundamentals - Node
 
 public class Node {
     private int value;

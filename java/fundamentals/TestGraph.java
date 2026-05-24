@@ -1,4 +1,4 @@
-package GraphTraversal;
+// Fundamentals - TestGraph
 
 class TestGraph {
     private Graph testGraph;

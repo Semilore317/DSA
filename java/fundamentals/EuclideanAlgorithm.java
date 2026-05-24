@@ -1,4 +1,4 @@
-package fundamentals;
+// Fundamentals - EuclideanAlgorithm
 
 public class EuclideanAlgorithm {
     public int gcd(int a, int b) {

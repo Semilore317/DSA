@@ -1,4 +1,4 @@
-package fundamentals;
+// Fundamentals - Array
 public class Array<S> {
     private int[] items;
     private int count;

@@ -1,11 +1,10 @@
-package GraphTraversal;
+// Fundamentals - Dijkstra
 
-import fundamentals.Array;
 
 import java.util.*;
 
 
-public class Djikstra {
+public class Dijkstra {
     public static Dictionary[] djikstra(Graph g, Vertex startingVertex) {
         Dictionary<String, Integer> distances = new Hashtable<String, Integer>();
         Dictionary<String, Vertex> previous = new Hashtable<>();

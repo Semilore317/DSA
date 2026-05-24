@@ -1,8 +1,8 @@
-package fundamentals;
+// Fundamentals - ArrayList
 
 import java.util.ArrayList;
 
-public class ArrayListJava {
+public class ArrayList {
     public static void main(String[] args) {
         // ArrayLists grow by 50% of their current size
         // vectors grow by 100% of their current size

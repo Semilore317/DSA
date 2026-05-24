@@ -1,4 +1,4 @@
-package GraphTraversal;
+// Fundamentals - QueueObject
 
 public class QueueObject implements Comparable<QueueObject>{
     public Vertex vertex;

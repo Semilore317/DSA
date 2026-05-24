@@ -1,6 +1,6 @@
-package fundamentals;
+// Fundamentals - BinarySearch
 
-public class binary_search {
+public class BinarySearch {
     public int binarySearch(int[] arr, int target) {
         int low = 0;
         int high = arr.length - 1;

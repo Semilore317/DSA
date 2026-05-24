@@ -1,4 +1,4 @@
-package GraphTraversal;
+// Fundamentals - Vertex
 
 import java.util.ArrayList;
 

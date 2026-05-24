@@ -1,20 +1,24 @@
-package fundamentals;
-
-import java.util.Set;
+// Fundamentals - LinearSearch
 
 public class LinearSearch {
-    public Boolean linearSearch(Set<Integer> set, int target) {
-        for (Integer element: set){
-            if (element.equals(target)){
-                return true;
+
+    public static int linearSearch(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i; // Return the index if the target is found
             }
         }
-        return false;
+        return -1; // Return -1 if the target is not found
     }
+
     public static void main(String[] args) {
-        int target = 12;
-        Set<Integer> set = Set.of(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
-        LinearSearch ls = new LinearSearch();
-        System.out.println(ls.linearSearch(set, target));
+        int[] arr = {5, 2, 8, 1, 9, 4};
+        int target = 9;
+        int index = linearSearch(arr, target);
+        if (index != -1) {
+            System.out.println("Element " + target + " found at index: " + index);
+        } else {
+            System.out.println("Element " + target + " not found in the array");
+        }
     }
-}
+}// An optimized version of Bubble Sort
