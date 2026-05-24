@@ -1,10 +1,10 @@
-package leetcode_problems;
+// LeetCode #121 - Best Time to Buy and Sell Stock
 
 import java.util.Arrays;
 
 import static java.util.Collections.max;
 
-public class problem_121 {
+public class BestTimeToBuySellStock {
     public int maxProfit(int[] prices) {
         int n = prices.length;
         int maxProfit = 0;

@@ -1,6 +1,6 @@
-package leetcode_problems;
+// LeetCode #7 - Reverse Integer
 
-public class problem_7 {
+public class ReverseInteger {
     public int reverse(int x) {
 
         long finalNum = 0;

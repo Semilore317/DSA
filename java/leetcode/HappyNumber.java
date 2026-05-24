@@ -1,8 +1,8 @@
-package leetcode_problems;
+// LeetCode #202 - Happy Number
 
 import java.util.HashSet;
 //
-public class problem_202 {
+public class HappyNumber {
     public boolean isHappy(int n) {
         HashSet<Integer> seen = new HashSet<>();
 

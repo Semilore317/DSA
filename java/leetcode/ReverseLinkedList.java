@@ -1,4 +1,4 @@
-package leetcode_problems;
+// LeetCode #206 - Reverse Linked List
 
 /*
 206. Reverse Linked List
@@ -33,7 +33,7 @@ Constraints:
  * }
  */
 
-class problem_206 {
+class ReverseLinkedList {
     public class ListNode {
         int val;
         ListNode next;

@@ -1,4 +1,4 @@
-package leetcode_problems;
+// LeetCode #102 - Binary Tree Level Order Traversal
 
 import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class problem_102 {
+public class BinaryTreeLevelOrder {
     class TreeNode {
         int val;
         TreeNode left;

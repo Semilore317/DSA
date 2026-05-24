@@ -1,6 +1,6 @@
-package leetcode_problems;
+// LeetCode #875 - Koko Eating Bananas
 
-public class problem_875 {
+public class KokoEatingBananas {
     public int minEatingSpeed(int[] piles, int H) {
         if (piles.length == 1) {
             return (piles[0] + H - 1) / H; // Single pile

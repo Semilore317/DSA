@@ -1,8 +1,8 @@
-package leetcode_problems;
+// LeetCode #739 - Daily Temperatures
 
 import java.util.Arrays;
 
-public class problem_739 {
+public class DailyTemperatures {
     public int[] dailyTemperatures(int[] temperatures) {
         /* SOLUTION 1: STACK*/
         // for each temperature in temperature

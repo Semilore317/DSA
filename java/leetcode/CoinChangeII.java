@@ -1,6 +1,6 @@
-package leetcode_problems;
+// LeetCode #518 - Coin Change II
 
-public class problem_518 {
+public class CoinChangeII {
     public int change(int amount, int[] coins) {
         int[] arr = new int[amount + 1];
         arr[0] = 1; // base case

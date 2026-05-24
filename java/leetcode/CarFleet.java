@@ -1,4 +1,4 @@
-package leetcode_problems;
+// LeetCode #853 - Car Fleet
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ If a car catches up to a car fleet at the mile target, it will still be consider
 Return the number of car fleets that will arrive at the destination.
 
 */
-public class problem_853 {
+public class CarFleet {
     public int carFleet(int target, int[] position, int[] speed) {
         int n = position.length;
         double[][] cars = new double[n][target + 1];

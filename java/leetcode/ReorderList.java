@@ -1,4 +1,4 @@
-package leetcode_problems;
+// LeetCode #143 - Reorder List
 
 /**
  * Definition for singly-linked list.
@@ -10,7 +10,7 @@ package leetcode_problems;
  * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-public class problem_143 {
+public class ReorderList {
     public static class ListNode {
         int val;
         ListNode next;

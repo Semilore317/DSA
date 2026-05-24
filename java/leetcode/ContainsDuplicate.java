@@ -1,4 +1,4 @@
-package leetcode_problems;
+// LeetCode #217 - Contains Duplicate
 
 import java.util.Arrays;
 /*
@@ -22,7 +22,7 @@ Example 3:
 Input: nums = [1,1,1,3,3,4,3,2,4,2]
 Output: true
 * */
-public class problem_217 {
+public class ContainsDuplicate {
     public boolean containsDuplicates(int[] nums){
         Arrays.sort(nums);
         int n = nums.length;

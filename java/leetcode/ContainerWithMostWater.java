@@ -1,9 +1,9 @@
-package leetcode_problems;
+// LeetCode #11 - Container With Most Water
 
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
-public class problem_11 {
+public class ContainerWithMostWater {
     public int maxArea(int[] height){
         int n = height.length;
         //{20,2,3,4,5,20,7}

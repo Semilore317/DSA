@@ -1,8 +1,8 @@
-package leetcode_problems;
+// LeetCode #532 - K-diff Pairs in an Array
 
 import java.util.*;
 
-public class problem_532 {
+public class KDiffPairs {
     public int findIndex(int[] arr, int element) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == element) {

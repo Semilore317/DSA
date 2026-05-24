@@ -1,4 +1,4 @@
-package leetcode_problems;
+// LeetCode #22 - Generate Parentheses
 
 import java.util.HashMap;
 import java.util.List;
@@ -15,7 +15,7 @@ Example 2:
 Input: n = 1
 Output: ["()"]
 */
-public class problem_22 {
+public class GenerateParentheses {
     // generate all the possible parenthese matches
     // check if they are valid using a separate valid parenthese checker
     // return the valid parenthesis

@@ -1,10 +1,10 @@
-package leetcode_problems;
+// LeetCode #15 - 3Sum
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class problem_15 {
+public class ThreeSum {
     public List<List<Integer>> threeSum(int[] numbers, int target) {
         Arrays.sort(numbers); // Sort the array for two-pointer technique
         List<List<Integer>> result = new ArrayList<>();

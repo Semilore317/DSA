@@ -1,10 +1,9 @@
-// Valid Parentheses
-package leetcode_problems;
+// LeetCode #20 - Valid Parentheses
 
 import java.util.HashMap;
 import java.util.Stack;
 
-public class problem_20 {
+public class ValidParentheses {
     public static int longestValidParentheses(String s) {
         HashMap<Character, Character> map = new HashMap<>();
           map.put('(', ')');

@@ -1,8 +1,8 @@
-package leetcode_problems;
+// LeetCode #164 - Maximum Gap
 
 import java.util.Arrays;
 
-public class problem_164 {
+public class MaximumGap {
     public int maximumGap(int[] nums) {
         // return the max gap of any two sucessive elements in the array
         if (nums == null || nums.length < 2) {

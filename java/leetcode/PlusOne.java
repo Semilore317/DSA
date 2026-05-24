@@ -1,6 +1,6 @@
-package leetcode_problems;
+// LeetCode #66 - Plus One
 
-public class problem_66 {
+public class PlusOne {
     public int[] plusOne(int[] digits) {
         int n = digits.length;
 

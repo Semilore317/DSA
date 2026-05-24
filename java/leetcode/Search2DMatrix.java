@@ -1,6 +1,6 @@
-package leetcode_problems;
+// LeetCode #74 - Search a 2D Matrix
 
-public class problem_74 {
+public class Search2DMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {
         int left = 0;
         int column_Length = matrix[0].length;

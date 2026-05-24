@@ -1,7 +1,6 @@
-// Jump Game
-package leetcode_problems;
+// LeetCode #55 - Jump Game
 
-public class problem_55 {
+public class JumpGame {
     public boolean canJump(int[] nums) {
         /* GREEDY MF'ING APPROACH */
 

@@ -1,4 +1,4 @@
-package leetcode_problems;
+// LeetCode #155 - Min Stack
 
 import java.util.Stack;
 
@@ -34,7 +34,7 @@ minStack.getMin(); // return -2
 
 */
 
-class problem_155 {
+class MinStack {
 
     private Stack<Integer> stack;
     private int min;
