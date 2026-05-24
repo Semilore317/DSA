@@ -28,7 +28,7 @@ public class ContainerWithMostWater {
         //int[] height ={1,8,6,2,5,4,8,3,7};
         int[] height = {1,2,1};
         //int[] height = {1,1};
-        problem_11 p = new problem_11();
+        ContainerWithMostWater p = new ContainerWithMostWater();
         System.out.println(p.maxArea(height));
     }
 }

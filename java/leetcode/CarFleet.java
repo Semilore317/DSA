@@ -41,7 +41,7 @@ public class CarFleet {
         int[] position = {10, 8, 0, 5, 3};
         int[] speed = {2, 4, 1, 1, 3};
 
-        problem_853 obj = new problem_853();
+        CarFleet obj = new CarFleet();
         System.out.println(obj.carFleet(target, position, speed));
     }
 }

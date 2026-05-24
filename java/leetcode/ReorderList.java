@@ -101,7 +101,7 @@ public class ReorderList {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
 
-        problem_143 obj = new problem_143();
+        ReorderList obj = new ReorderList();
         obj.reorderList(head);
     }
 }

@@ -26,7 +26,7 @@ public class BestTimeToBuySellStock {
 
     public static void main(String[] args) {
         int[] prices = {7,1,5,3,6,4};
-        problem_121 obj = new problem_121();
+        BestTimeToBuySellStock obj = new BestTimeToBuySellStock();
         System.out.println(obj.maxProfit(prices));
     }
 }

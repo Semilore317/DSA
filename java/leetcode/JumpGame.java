@@ -19,7 +19,7 @@ public class JumpGame {
 
     public static void main(String[] args) {
         int[] nums = {2,3,1,1,4};
-        problem_55 obj = new problem_55();
+        JumpGame obj = new JumpGame();
         System.out.println(obj.canJump(nums));
     }
 }

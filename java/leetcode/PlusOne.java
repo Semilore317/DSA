@@ -25,7 +25,7 @@ public class PlusOne {
 
     public static void main(String[] args) {
         int[] digits = {9,4,6,7,8};
-        problem_66 object = new problem_66();
+        PlusOne object = new PlusOne();
         int[] arr = object.plusOne(digits);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");

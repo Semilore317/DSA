@@ -21,7 +21,7 @@ public class ReverseInteger {
     }
 
     public static void main(String[] args) {
-        int x = new problem_7().reverse(-146);
+        int x = new ReverseInteger().reverse(-146);
         System.out.println(x);
     }
 }

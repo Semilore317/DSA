@@ -47,7 +47,7 @@ public class ThreeSum {
     public static void main(String[] args) {
         // Test the method
         int[] numbers = { -1, 0, 1, 2, -1, -4 };
-        problem_15 solution = new problem_15();
+        ThreeSum solution = new ThreeSum();
         List<List<Integer>> result = solution.threeSum(numbers, 0); // Target is 0 for 3Sum
         System.out.println(result); // Expected: [[-1, -1, 2], [-1, 0, 1]]
     }

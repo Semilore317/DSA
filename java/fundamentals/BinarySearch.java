@@ -20,7 +20,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        binary_search obj = new binary_search();
+        BinarySearch obj = new BinarySearch();
         System.out.println(obj.binarySearch(new int[]{1,2,3,4,5,6,7,8,9}, 9));
     }
 }

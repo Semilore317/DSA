@@ -29,7 +29,7 @@ public class LinkedList {
 //        System.out.println(list.contains(10));
 //        System.out.println(list.indexOf(10));
 //
-//        linkedLists obj = new linkedLists();
+//        LinkedList obj = new LinkedList();
 //        System.out.println(obj.findAllIndexes(list, 10));
 //
 //    }

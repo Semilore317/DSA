@@ -36,7 +36,7 @@ public class ContainsDuplicate {
 
     public static void main(String[] args) {
         int[] nums = {1,2,3,4};
-        problem_217 solution = new problem_217();
+        ContainsDuplicate solution = new ContainsDuplicate();
         System.out.println(solution.containsDuplicates(nums));
     }
 }

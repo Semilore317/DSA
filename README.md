@@ -6,27 +6,17 @@ Data Structures & Algorithms — solved problems and implementations in **Java**
 
 ```
 ├── java/
-│   ├── leetcode/           # 22 solutions
-│   ├── hackerrank/          # 22 solutions
+│   ├── leetcode/
+│   ├── hackerrank/
 │   ├── competitions/
-│   │   ├── ieeextreme-17/   # 7 solutions
-│   │   └── pre-extreme/     # 5 solutions
-│   └── fundamentals/        # 19 implementations
+│   │   ├── ieeextreme-17/
+│   │   └── pre-extreme/
+│   └── fundamentals/
 │
 └── python/
-    ├── leetcode/            # 27 solutions
-    └── fundamentals/        # 3 implementations
+    ├── leetcode/
+    └── fundamentals/
 ```
-
-## Problem Sources
-
-| Source | Java | Python | Total |
-|--------|------|--------|-------|
-| LeetCode | 22 | 27 | 49 |
-| HackerRank | 22 | — | 22 |
-| IEEExtreme 17 | 7 | — | 7 |
-| Pre-Extreme | 5 | — | 5 |
-| **Total Solutions** | **56** | **27** | **83** |
 
 ## Fundamentals
 
@@ -43,3 +33,4 @@ Core data structure and algorithm implementations:
 
 - Java
 - Python
+

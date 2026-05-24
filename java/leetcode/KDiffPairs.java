@@ -30,7 +30,7 @@ public class KDiffPairs {
     public static void main(String[] args) {
         int[] nums = {1,3,1,5,4};
         int k = 0;
-        problem_532 obj = new problem_532();
+        KDiffPairs obj = new KDiffPairs();
         System.out.println(obj.findPairs(nums, k));
     }
 }

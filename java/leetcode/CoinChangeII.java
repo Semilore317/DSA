@@ -17,7 +17,7 @@ public class CoinChangeII {
         return arr[amount];
     }
     public static void main(String[] args) {
-        problem_518 problem = new problem_518();
+        CoinChangeII problem = new CoinChangeII();
         System.out.println(problem.change(5, new int[]{1, 2, 5}));
     }
 }

@@ -26,7 +26,7 @@ public class KokoEatingBananas {
     public static void main(String[] args) {
         int[] piles = {1000000000};
         int H = 2;
-        problem_875 solution = new problem_875();
+        KokoEatingBananas solution = new KokoEatingBananas();
         System.out.println(solution.minEatingSpeed(piles, H));
     }
 }

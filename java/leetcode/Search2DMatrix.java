@@ -32,7 +32,7 @@ public class Search2DMatrix {
                 {23, 30, 34, 60}
         };
         int target = 3;
-        problem_74 solution = new problem_74();
+        Search2DMatrix solution = new Search2DMatrix();
         boolean result = solution.searchMatrix(matrix, target);
         System.out.println("Target found: " + result);
     }

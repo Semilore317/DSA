@@ -39,7 +39,7 @@ class MinStack {
     private Stack<Integer> stack;
     private int min;
 
-    public problem_155() {
+    public MinStack() {
         stack = new Stack<>();
         min = Integer.MAX_VALUE;
     }
@@ -68,7 +68,7 @@ class MinStack {
     }
 
     public static void main(String[] args) {
-        problem_155 obj = new problem_155();
+        MinStack obj = new MinStack();
         obj.push(10);
         obj.pop();
         int param_3 = obj.top();

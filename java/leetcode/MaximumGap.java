@@ -21,7 +21,7 @@ public class MaximumGap {
 
     public static void main(String[] args) {
         int[] nums = {3,6,9,1};
-        problem_164 test = new problem_164();
+        MaximumGap test = new MaximumGap();
         System.out.println(test.maximumGap(nums));
     }
 }

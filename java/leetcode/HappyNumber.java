@@ -29,7 +29,7 @@ public class HappyNumber {
 
     public static void main(String[] args) {
         int n = 2;
-        problem_202 object = new problem_202();
+        HappyNumber object = new HappyNumber();
         System.out.println(object.isHappy(n)); // Output: false
     }
 }
