@@ -1,0 +1,17 @@
+# Build artifacts
+java/out/
+*.class
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.idea/
+.fleet/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
