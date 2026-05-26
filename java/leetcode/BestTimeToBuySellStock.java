@@ -1,32 +1,23 @@
 // LeetCode #121 - Best Time to Buy and Sell Stock
 
-import java.util.Arrays;
-
-import static java.util.Collections.max;
-
 public class BestTimeToBuySellStock {
-    public int maxProfit(int[] prices) {
-        int n = prices.length;
-        int maxProfit = 0;
-        int max = 0;
-        for (int i = 1; i < n; i++) {
-            int[] rightSlice = Arrays.copyOfRange(prices, i, n);
+  public static int maxProfit(int[] prices) {
+    int minPrice = Integer.MAX_VALUE;
+    int maxProfit = 0;
 
-            for (int j = i; j < n; j++) {
-                if (rightSlice[j] > max) {
-                    max = rightSlice[j];
-                }
-            }
-        }
-
-        maxProfit = max;
-
-        return maxProfit;
+    for (int price : prices) {
+      if (price < minPrice) {
+        minPrice = price;
+      } else if (price - minPrice > maxProfit) {
+        maxProfit = price - minPrice;
+      }
     }
 
-    public static void main(String[] args) {
-        int[] prices = {7,1,5,3,6,4};
-        BestTimeToBuySellStock obj = new BestTimeToBuySellStock();
-        System.out.println(obj.maxProfit(prices));
-    }
+    return maxProfit;
+  }
+
+  public static void main(String[] args) {
+    int[] prices = { 7, 1, 5, 3, 6, 4 };
+    System.out.println(maxProfit(prices));
+  }
 }
