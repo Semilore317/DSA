@@ -1,6 +1,6 @@
 # DSA
 
-Data Structures & Algorithms — solved problems and implementations in **Java** and **Python**.
+solved problems and implementations in **C++**, **Java** and **Python**.
 
 ## Structure
 
