@@ -13,27 +13,23 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
   public static int cookies(int k, List<Integer> A) {
-    // while sweetness < k
-    // sweetness = (1 * least) + (2 * 2nd least)
+    // remove the two least-sweet cookies,
+    // combine them into a single cookie
+    // return the number of iterations required to get the optimal setup
+    // if not possible return -1
+
+    PriorityQueue<Integer> queue = new PriorityQueue<>(A); // guarantees the poll is the min
     int iterations = 0;
-    while (A.get(0) < k) {
-      if (A.size() == 1 && A.get(0) < k) {
-        System.out.println(-1);
+    while (queue.peek() < k) {
+      if (queue.size() < 2)
         return -1;
-      }
 
-      Collections.sort(A);
-      int x = A.get(0);
-      int y = A.get(1);
-
-      A.remove(x);
-      A.remove(y);
-
-      A.add(x + (2 * y));
+      int least = queue.poll();
+      int secondLeast = queue.poll();
+      queue.add(least + (2 * secondLeast));
       iterations++;
     }
 
-    System.out.println(iterations);
     return iterations;
   }
 }
