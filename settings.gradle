@@ -1,0 +1,31 @@
+import groovy.io.FileType
+
+rootProject.name = 'dsa'
+
+include('java-fundamentals')
+project(':java-fundamentals').projectDir = file('java/fundamentals')
+
+def judgeRoots = [
+        file('java/leetcode'),
+        file('java/hackerrank'),
+        file('java/whitebox'),
+        file('java/competitions'),
+]
+
+def moduleDirectories = new LinkedHashSet<File>()
+
+judgeRoots.findAll(File::exists).each { judgeRoot ->
+    judgeRoot.eachFileRecurse(FileType.FILES) { sourceFile ->
+        if (sourceFile.name == 'Solution.java' || sourceFile.name == 'Main.java') {
+            moduleDirectories.add(sourceFile.parentFile)
+        }
+    }
+}
+
+moduleDirectories.sort { it.path }.each { moduleDirectory ->
+    def relativePath = rootDir.toPath().relativize(moduleDirectory.toPath()).toString()
+    def moduleName = "problem-${relativePath.replace(File.separator, '-').replaceAll('[^A-Za-z0-9_-]', '-')}"
+
+    include(moduleName)
+    project(":${moduleName}").projectDir = moduleDirectory
+}
