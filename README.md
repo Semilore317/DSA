@@ -21,9 +21,9 @@ Solved problems and implementations in **C++**, **Java**, and **Python**.
 
 ## Java workflow
 
-Every judge problem is an independent, package-less Java program. This keeps the
-source ready to paste into the judge and allows different problems to use the
-same `Solution` or `Main` class name.
+Judge solutions are stored as package-less source files. This keeps them ready
+to paste into a judge and allows different problems to reuse the `Solution` or
+`Main` class name.
 
 From Neovim or a terminal, run a source file directly with JDK 21 or newer:
 
@@ -31,16 +31,14 @@ From Neovim or a terminal, run a source file directly with JDK 21 or newer:
 java java/whitebox/add-to-13/Main.java
 ```
 
-For IntelliJ IDEA, open the repository root as a Gradle project. The Gradle
-settings discover every problem folder as an independent module, preventing
-package-path and duplicate-class conflicts. Re-sync Gradle after adding a new
-problem folder.
+Archived judge solutions are intentionally excluded from Gradle. Some depend on
+types supplied by their judge, such as `ListNode` or `TreeNode`, so the archive
+is not expected to compile as one Java project.
 
-Validate the complete Java layout and compile every module with:
+The conventional `java/fundamentals` project remains available through Gradle:
 
 ```sh
-./gradlew check
-./gradlew build
+./gradlew :java-fundamentals:build
 ```
 
 ## Languages
