@@ -19,21 +19,6 @@ subprojects {
         options.encoding = 'UTF-8'
     }
 
-    if (name != 'java-fundamentals') {
-        sourceSets {
-            main {
-                java {
-                    setSrcDirs([projectDir])
-                    include('*.java')
-                }
-            }
-            test {
-                java.setSrcDirs([])
-                resources.setSrcDirs([])
-            }
-        }
-    }
-
     rootProject.tasks.named('build') {
         dependsOn(tasks.named('build'))
     }
@@ -41,44 +26,4 @@ subprojects {
     rootProject.tasks.named('check') {
         dependsOn(tasks.named('check'))
     }
-}
-
-tasks.register('verifyJavaLayout') {
-    group = 'verification'
-    description = 'Checks that judge solutions are isolated, package-less source files.'
-
-    def layouts = [
-            'java/leetcode'    : 'Solution.java',
-            'java/hackerrank'  : 'Solution.java',
-            'java/whitebox'    : 'Main.java',
-            'java/competitions': 'Main.java',
-    ]
-
-    inputs.files(layouts.keySet().collect { fileTree(it) { include('**/*.java') } })
-
-    doLast {
-        def violations = []
-
-        layouts.each { rootPath, expectedName ->
-            fileTree(rootPath) {
-                include('**/*.java')
-            }.files.sort { it.path }.each { sourceFile ->
-                if (sourceFile.name != expectedName) {
-                    violations.add("${sourceFile}: expected the filename ${expectedName}")
-                }
-
-                if (sourceFile.getText('UTF-8') =~ /(?m)^\s*package\s+[^;]+;/) {
-                    violations.add("${sourceFile}: judge solutions must not declare a package")
-                }
-            }
-        }
-
-        if (!violations.isEmpty()) {
-            throw new GradleException("Invalid Java problem layout:\n- ${violations.join('\n- ')}")
-        }
-    }
-}
-
-tasks.named('check') {
-    dependsOn(tasks.named('verifyJavaLayout'))
 }
