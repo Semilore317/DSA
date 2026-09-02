@@ -1,10 +1,10 @@
 class MyCircularQueue {
-    private static ArrayDeque<Integer> buffer;
-    private static int limit;
+    private ArrayDeque<Integer> buffer;
+    private int limit;
 
     public MyCircularQueue(int k) {
-        buffer = new ArrayDeque<>(limit);
         limit = k;
+        buffer = new ArrayDeque<>(limit);
     }
     
     public boolean enQueue(int value) {
