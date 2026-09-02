@@ -1,59 +1,59 @@
 class MyCircularQueue {
-    private ArrayDeque<Integer> buffer;
-    private int limit;
+    private int[] buffer;
+    private int front;
+    private int size;
 
     public MyCircularQueue(int k) {
-        limit = k;
-        buffer = new ArrayDeque<>(limit);
+        buffer = new int[k];
+        front = 0; // it's just the index
+        size = 0;
     }
-    
+
     public boolean enQueue(int value) {
-        // sanity check if the buffer is full first... if yes, return false
-        boolean result;
+        if (size == buffer.length)
+            return false;
 
-        if(buffer.size() == limit){
-            result = false;
-        }else{
-            buffer.add(value);
-            result = true;
-        }
+        // the next free position is immediately after the current logical Queue
 
-        return result;
+        int insert_idx = (front + size) % buffer.length;
+        buffer[insert_idx] = value;
+        size++;
+
+        return true;
     }
-    
+
     public boolean deQueue() {
-        // sanity check if the buffer is empty first... if yes, return false
-        boolean result;
+        if(size == 0)
+            return false;
 
-        if(buffer.isEmpty()){
-            result = false;
-        }else{
-            buffer.poll();
-            result = true;
-        }
+        // move the front forward
+        front = (front + 1) % buffer.length;
+        size--;
 
-        return result;
-    
+        return true;
     }
-    
+
     public int Front() {
-        return (buffer.peek() == null)
-                ? -1
-                : buffer.peekFirst();
+        if(size == 0)
+            return -1;
+
+        return buffer[front];
     }
-    
+
     public int Rear() {
-        return (buffer.peek() == null)
-                ? -1
-                : buffer.peekLast();
+        if(size == 0)
+            return -1;
+
+        int rear_idx = (front + size - 1) % buffer.length;
+        return buffer[rear_idx];
     }
-    
+
     public boolean isEmpty() {
-        return buffer.isEmpty();
+        return size == 0;
     }
-    
+
     public boolean isFull() {
-        return (buffer.size() == limit);
+        return size == buffer.length;
     }
 }
 
